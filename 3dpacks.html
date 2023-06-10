@@ -1,0 +1,101 @@
+---
+layout: home
+---
+
+<div class="container-fluid mt-sm-3">
+  <div class="row p-3 my-3">
+    <h1 class="text-dark shadow-lg btn-lg btn p-3 text-left btn-light row">
+      <span class="col-md-9">
+        G-REALM 3D PACK<i class="text-danger"> featuring Superbook </i>
+      </span>
+
+      <span class="float-end col-md-3">
+        <button class="btn-dark btn" onclick="reading1()">
+          Details
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-arrow-down-short"
+            viewBox="0 0 16 16">
+            <path
+              fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+          </svg>
+        </button>
+
+        <button class="btn" onclick="close1()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#e60000"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+            onclick="close1()">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+          </svg>
+        </button>
+      </span>
+    </h1>
+
+    <!----------------------------------------------CAROUSEL------------------------------------------->
+    <div class="row" id="reading1" style="display: none">
+      <h3 class="p-1 gtitle4 m-0 text-left ps-3 border-0">CONTENTS</h3>
+      <div class="row container-fluid">
+        <div class="col-md-9 row p-3">
+          <div class="col-md-7 bg-light">
+            <ol class="ol text-left">
+              <li class="py-1 pt-3 list-item">
+                John the Baptist <i class="text-primary">27 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                Jesus - Full Movie <i class="text-primary">75 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                Miracles of Jesus <i class="text-primary">27 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                Elijah and prophets of Baal <i class="text-primary">27 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                Isaiah <i class="text-primary">27 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                Jeremiah <i class="text-primary">27 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                Daniel and the lions <i class="text-primary">27 mins</i>
+              </li>
+              <li class="py-1 list-item">
+                + 43 <i class="text-primary">More</i>
+              </li>
+            </ol>
+          </div>
+          <div class="col-md-5 text-center py-3">
+            <h2 class="text-center border-bottom">PRICE</h2>
+            <h4 class="text-center yellowbg py-3 mb-3">UGX 50,000</h4>
+            <p>
+              For the entire album<br />
+              <span class="gtitle"> (50 Animations) </span>
+            </p>
+            <button
+              class="btn-lg btn-danger border-0 w-50"
+              onclick="window.location.href='Tel:+256773913902' ">
+              BUY
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img src="images/john.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------------------CAROUSEL------------------------------------------>
+  </div>
+</div>
+
+<script src="js/reading.js"></script>
