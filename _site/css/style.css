@@ -165,16 +165,16 @@ footer {
 }
 
 .dropdown-menu a {
-  color: antiquewhite !important;
-  font-size: x-large;
+  color: rgb(255, 255, 255) !important;
+  font-size: 120%;
   border-bottom: 1px solid rgb(201, 187, 142);
 }
 
 .dropdown-menu a:hover {
   color: antiquewhite !important;
-  font-size: x-large;
+  font-size: 150%;
   border-bottom: 1px solid rgb(201, 187, 142);
-  background-color: rgb(131, 123, 117) !important;
+  background-color: rgba(131, 123, 117, 0.9) !important;
 }
 
 .dropdown-menu {
@@ -200,4 +200,9 @@ footer {
   .dropdown-menu a:hover {
     font-size: 180% !important;
   }
+}
+
+.borderedinput {
+  border: 0 !important;
+  border-bottom: 2px solid #373737 !important;
 }

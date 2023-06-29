@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/style2.css" />
     <link rel="stylesheet" href="/css/carousel.css" />
+    <link rel="stylesheet" href="/css/progressbar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6e95959b6b.js"
+      crossorigin="anonymous"></script>
 
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -40,33 +45,37 @@
           id="dropdown01"
           data-bs-toggle="dropdown"
           aria-expanded="false">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="26"
-            fill="currentColor"
-            class="bi bi-cart4"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-          </svg>
-          Products</a
+          <i class="fa-solid fa-bars text-light"></i>
+          Menu</a
         >
         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-          <li>
-            <a class="dropdown-item" href="reading.html">Reading lessons</a>
+          <li class="text-light">
+            <a class="dropdown-item" href="reading.html">
+              <i class="fa-solid fa-book-open-reader text-warning"></i>
+              Reading lessons</a
+            >
           </li>
 
           <li>
-            <a class="dropdown-item" href="3dpacks.html">3D Animations</a>
+            <a class="dropdown-item" href="3dpacks.html"
+              ><i class="fa-solid fa-cube text-warning"></i> 3D Animations</a
+            >
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="partner.html">
+              <i class="fa-solid fa-circle-dollar-to-slot text-warning"></i>
+              Support</a
+            >
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="index.html">
+              <i class="fa-solid fa-home text-warning"></i>
+              home</a
+            >
           </li>
         </ul>
-      </button>
-
-      <button
-        class="btn btn-danger"
-        onclick="window.location.href='index.html' ">
-        Home
       </button>
     </h1>
   </div>
@@ -77,7 +86,7 @@
 <div class="row p-3  ">
 
 
-<div class="col-md-4">
+<div class="col-md-6">
   
   
   <h2 class="gtitle2 text-center p-1">BUY G-REALM 3D PACK</h2>
@@ -85,7 +94,7 @@
     Featuring Superbook
   </h4>
   <p class="text-center p-md-5 my-3">
-    <img src="images/superbook.png" alt="" class="img-fluid">
+    <img src="images/3dpack.jpg" alt="" class="img-fluid">
   </p>
   <p class="text-center">
    Contains <span class="yellowbg p-1">50 Full HD Videos</span>  of 3D Animations full of life from the Bible for kids to learn the Word of GOD the fun way yet staying on the Truth. 
@@ -93,7 +102,7 @@
   </p>
 
      <h2 class="my-5 text-center">
-      <button class="btn-danger btn w-50 text-center" onclick="showOrderForm()">BUY</button>
+      <button class="btn-primary btn w-50 text-center" onclick="window.location.href='3dpacks.html'">See Movie titles</button> <button class="btn-danger btn w-25 text-center" onclick="showOrderForm()">BUY</button>
 
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script>
@@ -102,14 +111,14 @@
             title: 'Place an Order',
             html: `
               <form id="orderForm">
+                <h3 class="text-danger p-1 yellowbg fw-bold">UgX 50,000</h3><br>
+                <input type="text" id="name" class="form-control borderedinput text-center" placeholder="Your Name" required><br>
                 
-                <input type="text" id="name" placeholder="Your Name" required><br><br>
                 
+                <input type="text" id="phone"  class="form-control borderedinput text-center"  placeholder="Your Phone" required><br>
                 
-                <input type="text" id="phone" placeholder="Your Phone" required><br><br>
-                
-                <label for="paymentMethod">Pay using:</label>
-                <select id="paymentMethod">
+                <select id="paymentMethod"  class="form-control  borderedinput text-center" >
+                  <option >paymentMethod</option>
                   <option value="mobile_money">Mobile Money</option>
                   <option value="credit_card">Credit Card</option>
                   <option value="cash">Cash</option>
@@ -123,7 +132,8 @@
               const name = document.getElementById('name').value;
               const phone = document.getElementById('phone').value;
               const paymentMethod = document.getElementById('paymentMethod').value;
-      
+
+                  
               // Verify inputs
               if (name.trim() === '' || phone.trim() === '') {
                 Swal.showValidationMessage('Name and Phone are required');
@@ -164,55 +174,123 @@ const formattedDay = day.toLocaleDateString('en-US', options);
       </div>
 
 
-<div class="col-md-4">
-  <img src="images/john.png" alt="" class="img-fluid">
+<div class="col-md-6">
+  <h2 class="gtitle">Watch Sample</h2>
+  <video class="w-100 my-auto" controls>
+    <source src="videos/sample.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 </div>
-      <div class="col-md-4 m-0 ">
-       <img src="images/jesus.png" alt="" class="img-fluid">
-        </div>
+     
 
 
-</div>
-
-
-
-
-<div class="container-fluid row m-0">
-  <div class="col-md-12 gmiddle m-0 p-1">
-    <h3 class="gtitle2 p-3">OUR MISSIONS</h3>
-    <ol>
-      <li class="py-3">
-        <p class="gtext justify-content">
-          To custom make Christian and Spirit-Filled but African 3D & 2D
-          animations and illustrations for Bible Stories and Bible lessons for
-          children in Africa to relate with and enjoy learning the word and the
-          ways of God. We also promote content of other people who do similar
-          work.
-        </p>
-      </li>
-      <li class="pb-3">
-        <p class="gtext justify-content">
-          To custom make excellent original Education Media Content (videos,
-          audios, docs) & Education Technology (software & hardware)
-          specifically to help the African children learn better and become very
-          literate & highly skilled.
-        </p>
-      </li>
-    </ol>
-  </div>
 </div>
 
+<script>
+  window.addEventListener('load', function() {
+  setTimeout(function() {
+    Swal.fire({
+      
+      html: `
+
+      <h2 class="gtitle">Buy the G-Realm Pack</h2>
+             <div class="m-1">
+              <img src="images/gbox.png" class="img-fluid" width="320px">
+
+              <h1 class="yellowbg p-2 my-3 gtitle2 text-dark"><span class="text-primary p fw-thin">UGX</span> 50,000 <span class="text-primary h6">only</span></h1>
+             
+              <div class="m-2">
+                <button class="btn-danger btn w-50 text-center" onclick="showOrderForm()">BUY</button>
+
+                </div>
+              
+              </div>
+            `,
+      timer: 15000, // Popup will close after 5 seconds
+      allowOutsideClick: true,
+      allowEscapeKey: true,
+      showCloseButton: true,
+      showConfirmButton: false,
+      icon: 'none'
+    });
+  }, 3000); // Delay the popup for 30 seconds (30000 milliseconds)
+});
+
+</script>
 
 
-
-
-
-<div class="row py-5 text-center p-md-5 m-0">
+<div class="container-fluid row m-0 mb-5">
+  <div class="col-md-12 m-0 p-1">
+    <h3 class="gtitle2 p-3">OUR MISSION</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <ol>
+          <li class="py-3">
+            <p class="gtext justify-content">
+              To custom make Christian and Spirit-Filled but African 3D & 2D
+              animations and illustrations for Bible Stories and Bible lessons
+              for children in Africa to relate with and enjoy learning the word
+              and the ways of God. We also promote content of other people who
+              do similar work.
+            </p>
+          </li>
+          <li class="pb-3">
+            <p class="gtext justify-content">
+              To custom make excellent original Education Media Content (videos,
+              audios, docs) & Education Technology (software & hardware)
+              specifically to help the African children learn better and become
+              very literate & highly skilled.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div class="col-md-6"><div class="row py-5 text-center p-md-5 m-0">
   <h2 class="gtitle3 gbutton text-center m-0">G-Realm Logo</h2>
   <div class="text-center m-0">
     <img src="images/logo.png" class="img-fluid w-50 m-0" alt="" />
   </div>
 </div>
+</div>
+    </div>
+
+    <div>
+      <h2 class="gtitle2">
+        FUNDING GOALS: <span class="text-primary">JUN-DEC 2023 </span>
+      </h2>
+      <div id="countdown-wrap">
+        <div id="goals-wrap">
+          <div id="goal">
+            $20,000
+            <p class="text-success">GOAL</p>
+          </div>
+        </div>
+        <div id="glass">
+          <div id="progress"></div>
+        </div>
+
+        <div class="goal-stat">
+          <!-- STEP 2 ||||||||||||||||||||||||||||||||||||||-->
+          <!--|||||||||||||||||| CHANGE ||||||||||||||||||||-->
+
+          <span class="goal-number">$17.29</span>
+
+          <!--|||||||||||||||||| AMOUNT ||||||||||||||||||||-->
+          <!--||||||||||||||||||||||||||||||||||||||||||||||-->
+          <!-- If you've done step 1, you are done :)
+          otherwise step 1 is at the top, scroll up! -->
+
+          <span class="goal-label">RAISED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 
 </div>
