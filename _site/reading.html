@@ -49,16 +49,16 @@
           Menu</a
         >
         <ul class="dropdown-menu" aria-labelledby="dropdown01">
+          <li>
+            <a class="dropdown-item" href="3dpacks.html"
+              ><i class="fa-solid fa-cube text-warning"></i> 3D Animations</a
+            >
+          </li>
+
           <li class="text-light">
             <a class="dropdown-item" href="reading.html">
               <i class="fa-solid fa-book-open-reader text-warning"></i>
               Reading lessons</a
-            >
-          </li>
-
-          <li>
-            <a class="dropdown-item" href="3dpacks.html"
-              ><i class="fa-solid fa-cube text-warning"></i> 3D Animations</a
             >
           </li>
 
@@ -161,21 +161,21 @@
                 Swal.fire({
                   title: "Place an Order",
                   html: `
-                  <form id="orderForm">
-                    
-                    <input type="text" id="name" placeholder="Your Name" required><br><br>
-                    
-                    
-                    <input type="text" id="phone" placeholder="Your Phone" required><br><br>
-                    
-                    <label for="paymentMethod">Pay using:</label>
-                    <select id="paymentMethod">
-                      <option value="mobile_money">Mobile Money</option>
-                      <option value="credit_card">Credit Card</option>
-                      <option value="cash">Cash</option>
-                    </select><br><br>
-                  </form>
-                `,
+                    <form id="orderForm">
+                      <h3 class="text-danger p-1 yellowbg fw-bold">UgX 50,000</h3><br>
+                      <input type="text" id="name" class="form-control borderedinput text-center" placeholder="Your Name" required><br>
+                      
+                      
+                      <input type="text" id="phone"  class="form-control borderedinput text-center"  placeholder="Your Phone/ Email" required><br>
+                      
+                      <select id="paymentMethod"  class="form-control  borderedinput text-center" >
+                        <option >Payment Method</option>
+                        <option value="mobile_money">Mobile Money</option>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="cash">Cash</option>
+                      </select><br><br>
+                    </form>
+                  `,
                   confirmButtonText: "Place Order",
                   showCancelButton: true,
                   cancelButtonText: "Cancel",
@@ -237,9 +237,6 @@
                 });
               }
             </script>
-            <p class="my-3">
-              <button class="btn-lg btn-secondary border-0 w-100">BOOK</button>
-            </p>
           </div>
         </div>
         <div class="col-md-3">

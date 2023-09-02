@@ -82,21 +82,21 @@ layout: home
                 Swal.fire({
                   title: "Place an Order",
                   html: `
-                  <form id="orderForm">
-                    
-                    <input type="text" id="name" placeholder="Your Name" required><br><br>
-                    
-                    
-                    <input type="text" id="phone" placeholder="Your Phone" required><br><br>
-                    
-                    <label for="paymentMethod">Pay using:</label>
-                    <select id="paymentMethod">
-                      <option value="mobile_money">Mobile Money</option>
-                      <option value="credit_card">Credit Card</option>
-                      <option value="cash">Cash</option>
-                    </select><br><br>
-                  </form>
-                `,
+                    <form id="orderForm">
+                      <h3 class="text-danger p-1 yellowbg fw-bold">UgX 50,000</h3><br>
+                      <input type="text" id="name" class="form-control borderedinput text-center" placeholder="Your Name" required><br>
+                      
+                      
+                      <input type="text" id="phone"  class="form-control borderedinput text-center"  placeholder="Your Phone/ Email" required><br>
+                      
+                      <select id="paymentMethod"  class="form-control  borderedinput text-center" >
+                        <option >Payment Method</option>
+                        <option value="mobile_money">Mobile Money</option>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="cash">Cash</option>
+                      </select><br><br>
+                    </form>
+                  `,
                   confirmButtonText: "Place Order",
                   showCancelButton: true,
                   cancelButtonText: "Cancel",
@@ -158,9 +158,6 @@ layout: home
                 });
               }
             </script>
-            <p class="my-3">
-              <button class="btn-lg btn-secondary border-0 w-100">BOOK</button>
-            </p>
           </div>
         </div>
         <div class="col-md-3">
